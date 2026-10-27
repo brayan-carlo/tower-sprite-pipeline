@@ -19,7 +19,7 @@ This roadmap is based on development records reviewed on 26 October 2026. Entrie
 - [x] Review every included file for credentials, personal paths, private records, third-party notices, and redistribution restrictions.
 - [x] Classify required fixtures versus development-only data; do not remove a required fixture silently.
 - [ ] Add a public visual example with a documented redistribution basis. Private artwork is excluded from the initial release.
-- [ ] Reproduce dependency setup and offline tests from the isolated copy.
+- [x] Reproduce dependency setup and selected offline tests from the isolated copy; verify a clean Git clone.
 - [x] Replace draft installation text with verified instructions.
 - [x] Publish English and Spanish documentation, contribution guidance, and issue templates.
 - [x] Record the exact snapshot, test environment, results, limitations, and release date.

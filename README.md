@@ -94,6 +94,8 @@ Start with the [installation guide](docs/INSTALL.md), then run the [documented o
 
 ## Where community help matters
 
+Use [Discussions](https://github.com/brayan-carlo/tower-sprite-pipeline/discussions) for ideas and questions, and issues for reproducible defects.
+
 See the [roadmap](ROADMAP.md) for proposed work on reproducible setup, independently supplied characters, scale and motion evaluation, provider-contract robustness, and concise contributor documentation.
 
 Open an [issue](https://github.com/brayan-carlo/tower-sprite-pipeline/issues) for a reproducible failure or proposal, or send a pull request following [CONTRIBUTING.md](CONTRIBUTING.md). Useful contributions include new licensed evaluation cases, focused fixes, and improvements to review criteria. Small, well-described issues are more useful than unsupported claims that an animation is “good” or “bad.”

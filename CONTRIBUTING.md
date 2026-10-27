@@ -37,6 +37,8 @@ Describe the intended motion and the observed result. New examples should help e
 
 ## Ideas and discussion
 
+Use [Discussions](https://github.com/brayan-carlo/tower-sprite-pipeline/discussions) for open questions and early proposals.
+
 Use focused proposals: the user problem, an example, the expected improvement, and the tradeoffs. A provider change should identify what defect it is expected to address and how it would be evaluated.
 
 The maintainer should separate design discussion from reproducible bug reports, and keep starter tasks small enough to review.

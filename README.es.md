@@ -92,6 +92,8 @@ Los ejemplos visuales necesitan derechos de redistribución documentados antes d
 
 ## Cómo puede ayudar la comunidad
 
+Usa [Discussions](https://github.com/brayan-carlo/tower-sprite-pipeline/discussions) para preguntas e ideas, e issues para defectos reproducibles.
+
 Buscamos reportes reproducibles, personajes de evaluación con permiso para compartirlos, criterios de revisión más claros y correcciones pequeñas acompañadas de evidencia.
 
 El [roadmap](ROADMAP.md) distingue preparación de la publicación, correcciones prioritarias y evaluación futura. La [guía de contribución](CONTRIBUTING.md) propone la información necesaria para revisar un aporte.

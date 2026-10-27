@@ -12,6 +12,7 @@ Date: **26 October 2026** (America/Montevideo). Scope: the isolated source snaps
 | Node syntax | Seven JavaScript module files passed `node --check` |
 | Fresh Python environment | Created a separate venv and installed Pillow 12.3.0 from PyPI |
 | Fresh-environment smoke check | CLI help succeeded; 20 generic-contract tests passed |
+| Clean Git clone | All 87 source inventory hashes matched; Python parsing, CLI help, and the same 20-test smoke check passed |
 | Scoped publication scan | No matches for checked credential formats, long literal secret assignments, or private user-directory paths |
 
 The 20-test smoke check repeats a subset of the larger Python run; it is not added to a unique-test total. The full Python run took about 607 seconds of test-runner time; the Node run took about 25 seconds. Timing is machine-specific.
