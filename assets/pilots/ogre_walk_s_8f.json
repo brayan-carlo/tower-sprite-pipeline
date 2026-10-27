@@ -1,0 +1,50 @@
+{
+  "mode": "sequential_reconstruction",
+  "project_root": "C:/UnityProjects/tower1",
+  "source_path": "Assets/Art/GeneratedWork/Enemies/Ogro/Walk/source/Ogre_Walk_S_Base.png",
+  "entity": "ogre",
+  "action": "walk",
+  "direction": "S",
+  "frame_count": 8,
+  "frame_width": 256,
+  "frame_height": 416,
+  "technical_scale": 2,
+  "anchor": "bottom-center",
+  "root_motion": false,
+  "max_budget_usd": 0.50,
+  "primary_model": "fal-ai/qwen-image-2/edit",
+  "fallback_model": "fal-ai/nano-banana-2/edit",
+  "max_primary_submits": 10,
+  "max_fallback_submits": 2,
+  "pose_names": ["left_contact", "left_down", "left_pass", "left_up", "right_contact", "right_down", "right_pass", "right_up"],
+  "poses": [
+    {"name":"left_contact",  "support_foot":"left",  "stride":-1.0, "counter_swing": 1.0, "body_y": 0.0},
+    {"name":"left_down",     "support_foot":"left",  "stride":-0.6, "counter_swing": 0.6, "body_y": 1.0},
+    {"name":"left_pass",     "support_foot":"left",  "stride": 0.0, "counter_swing": 0.0, "body_y": 0.0},
+    {"name":"left_up",       "support_foot":"left",  "stride": 0.6, "counter_swing":-0.6, "body_y":-1.0},
+    {"name":"right_contact", "support_foot":"right", "stride": 1.0, "counter_swing":-1.0, "body_y": 0.0},
+    {"name":"right_down",    "support_foot":"right", "stride": 0.6, "counter_swing":-0.6, "body_y": 1.0},
+    {"name":"right_pass",    "support_foot":"right", "stride": 0.0, "counter_swing": 0.0, "body_y": 0.0},
+    {"name":"right_up",      "support_foot":"right", "stride":-0.6, "counter_swing": 0.6, "body_y":-1.0}
+  ],
+  "identity_regions": {
+    "head_face": {"bbox_ratio":[0.42,0.00,0.88,0.25], "master_hamming_max":10, "previous_hamming_max":8},
+    "chest": {"bbox_ratio":[0.22,0.18,0.78,0.48], "master_hamming_max":14, "previous_hamming_max":12},
+    "belt": {"bbox_ratio":[0.16,0.42,0.82,0.59], "master_hamming_max":14, "previous_hamming_max":12},
+    "screen_left_bracer": {"bbox_ratio":[0.00,0.30,0.34,0.62], "master_hamming_max":14, "previous_hamming_max":12},
+    "screen_right_bracer": {"bbox_ratio":[0.68,0.32,1.00,0.64], "master_hamming_max":14, "previous_hamming_max":12},
+    "main_loincloth": {"bbox_ratio":[0.34,0.49,0.72,0.82], "master_hamming_max":14, "previous_hamming_max":12}
+  },
+  "foot_regions": {
+    "screen_left": {"bbox_ratio":[0.05,0.78,0.50,1.00], "leg_corridor_ratio":[0.18,0.50,0.49,0.96]},
+    "screen_right": {"bbox_ratio":[0.50,0.78,0.98,1.00], "leg_corridor_ratio":[0.51,0.50,0.86,0.96]}
+  },
+  "qa": {
+    "center_drift_px_max":4, "opaque_area_ratio_min":0.90, "opaque_area_ratio_max":1.10,
+    "bbox_ratio_delta_max":0.05, "palette_colors":64, "palette_rgb_distance_max":48,
+    "chroma_rgb_distance_max":24,
+    "out_of_palette_ratio_max":0.02, "new_alpha_components_max":2,
+    "orphan_area_ratio_max":0.005, "new_foot_island_area_px_max":3,
+    "planted_foot_drift_px_max":2
+  }
+}

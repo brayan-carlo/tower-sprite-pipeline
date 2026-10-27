@@ -1,0 +1,39 @@
+{
+  "evidence_mode": "OFFLINE_FIXTURE_NOT_FOR_LIVE_USE",
+  "base": {
+    "model": "fal-ai/nano-banana-2/edit",
+    "source_url": "https://api.fal.ai/v1/models/pricing",
+    "verified_at": "2026-09-04T12:00:00Z",
+    "currency": "USD",
+    "unit": "image",
+    "base_unit_price_usd": "0.10",
+    "resolution": "0.5K",
+    "resolution_multiplier": "1"
+  },
+  "cases": [
+    {"id":"canonical","now":"2026-09-04T12:00:00Z","changes":{},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T12:00:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"age-boundary","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T11:45:00Z"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T11:45:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"age-expired","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T11:44:59Z"},"accepted":false},
+    {"id":"future-boundary","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T12:01:00Z"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T12:01:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"future-expired","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T12:01:01Z"},"accepted":false},
+    {"id":"age-submillisecond-boundary","now":"2026-09-04T12:00:00.0001Z","changes":{"verified_at":"2026-09-04T11:45:00Z"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T11:45:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"future-submillisecond-boundary","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T12:01:00.0001Z"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T12:01:00.0001Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"offset","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T09:00:00-03:00"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T09:00:00-03:00","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"fraction","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T12:00:00.125Z"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T12:00:00.125Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"space","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04 12:00:00Z"},"accepted":false},
+    {"id":"no-zone","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T12:00:00"},"accepted":false},
+    {"id":"bad-date","now":"2026-03-02T12:00:00Z","changes":{"verified_at":"2026-02-30T12:00:00Z"},"accepted":false},
+    {"id":"leap","now":"2024-02-29T12:00:00Z","changes":{"verified_at":"2024-02-29T12:00:00Z"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2024-02-29T12:00:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"1","effective_unit_price_usd":"0.10"}},
+    {"id":"bad-offset","now":"2026-09-04T12:00:00Z","changes":{"verified_at":"2026-09-04T12:00:00+24:00"},"accepted":false},
+    {"id":"wrong-url","now":"2026-09-04T12:00:00Z","changes":{"source_url":"https://example.invalid/pricing"},"accepted":false},
+    {"id":"model-page","now":"2026-09-04T12:00:00Z","changes":{"source_url":"https://fal.ai/models/fal-ai/nano-banana-2/edit"},"accepted":false},
+    {"id":"wrong-unit","now":"2026-09-04T12:00:00Z","changes":{"unit":"request"},"accepted":false},
+    {"id":"extra","now":"2026-09-04T12:00:00Z","changes":{"unexpected":true},"accepted":false},
+    {"id":"decimal","now":"2026-09-04T12:00:00Z","changes":{"resolution_multiplier":"0.5"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T12:00:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.10","resolution":"0.5K","resolution_multiplier":"0.5","effective_unit_price_usd":"0.050"}},
+    {"id":"decimal-long","now":"2026-09-04T12:00:00Z","changes":{"base_unit_price_usd":"0.123456789012345678","resolution_multiplier":"0.333333333333333333"},"accepted":true,"normalized":{"source_url":"https://api.fal.ai/v1/models/pricing","verified_at":"2026-09-04T12:00:00Z","currency":"USD","unit":"image","base_unit_price_usd":"0.123456789012345678","resolution":"0.5K","resolution_multiplier":"0.333333333333333333","effective_unit_price_usd":"0.041152263004115225958847736995884774"}},
+    {"id":"decimal-plus","now":"2026-09-04T12:00:00Z","changes":{"base_unit_price_usd":"+0.10"},"accepted":false},
+    {"id":"decimal-exponent","now":"2026-09-04T12:00:00Z","changes":{"base_unit_price_usd":"1e-1"},"accepted":false},
+    {"id":"decimal-space","now":"2026-09-04T12:00:00Z","changes":{"base_unit_price_usd":" 0.10 "},"accepted":false},
+    {"id":"nonfinite","now":"2026-09-04T12:00:00Z","changes":{"base_unit_price_usd":"NaN"},"accepted":false}
+  ]
+}

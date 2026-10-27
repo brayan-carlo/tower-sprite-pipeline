@@ -1,0 +1,34 @@
+# Credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+# Python and editor/runtime output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+.coverage
+htmlcov/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# Generated runs, private evidence and downloaded provider results
+runs/
+outputs/
+artifacts/
+private/
+assets/fixtures/private/
+assets/qa/
+*.log
+*.mp4
+*.mov
+*.webm
+# Local publication tooling is never part of the skill
+_publication/

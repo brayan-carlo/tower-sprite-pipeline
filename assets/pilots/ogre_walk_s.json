@@ -1,0 +1,14 @@
+{
+  "project_root": "C:/UnityProjects/tower1",
+  "source_path": "Assets/Art/GeneratedWork/Enemies/Ogro/Walk/source/Ogre_Walk_S_Base.png",
+  "entity": "ogre",
+  "action": "walk",
+  "direction": "S",
+  "frame_count": 6,
+  "frame_width": 256,
+  "frame_height": 416,
+  "anchor": "bottom-center",
+  "max_budget_usd": 0.17,
+  "primary_model": "fal-ai/kling-image/o1",
+  "fallback_model": "fal-ai/nano-banana-2/edit"
+}

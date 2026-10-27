@@ -1,0 +1,8 @@
+interface:
+  display_name: "Tower Sprite Pipeline"
+  short_description: "Generate directional sprites from isolated PNGs"
+  default_prompt: "Use $tower-sprite-pipeline to animate this isolated character PNG in one action and orientation."
+
+policy:
+  allow_implicit_invocation: true
+

@@ -1,0 +1,132 @@
+{
+  "mode": "hybrid_piece_reconstruction",
+  "project_root": "${CODEX_HOME}/work/tower-sprite-pipeline/technical-masters/ogre-walk-s-base",
+  "source_path": "Ogre_Walk_S_Base_technical_512x832.png",
+  "entity": "ogre",
+  "action": "walk",
+  "direction": "S",
+  "orientation": "S_3_4",
+  "frame_count": 8,
+  "frame_width": 256,
+  "frame_height": 416,
+  "technical_scale": 2,
+  "anchor": "bottom-center",
+  "root_motion": false,
+  "pilot_contact_frames": [1, 5],
+  "ownership_order": ["loincloth_front", "screen_left_lower_arm_hand", "screen_right_lower_arm_hand", "screen_left_upper_arm", "screen_right_upper_arm", "screen_left_lower_leg_foot", "screen_right_lower_leg_foot", "screen_left_upper_leg", "screen_right_upper_leg"],
+  "core_pivot": [254, 354],
+  "joint_chains": {
+    "screen_left_arm": {
+      "root_part": "core",
+      "joints": [
+        {"name": "left_shoulder", "parent_part": "core", "child_part": "screen_left_upper_arm", "parent_anchor": [170, 338], "child_anchor": [170, 338], "repair_polygon": [[170, 314], [186, 322], [194, 338], [186, 354], [170, 362], [154, 354], [146, 338], [154, 322]], "max_radius": 24},
+        {"name": "left_elbow", "parent_part": "screen_left_upper_arm", "child_part": "screen_left_lower_arm_hand", "parent_anchor": [124, 466], "child_anchor": [124, 466], "repair_polygon": [[124, 442], [140, 450], [148, 466], [140, 482], [124, 490], [108, 482], [100, 466], [108, 450]], "max_radius": 24}
+      ]
+    },
+    "screen_right_arm": {
+      "root_part": "core",
+      "joints": [
+        {"name": "right_shoulder", "parent_part": "core", "child_part": "screen_right_upper_arm", "parent_anchor": [338, 338], "child_anchor": [338, 338], "repair_polygon": [[338, 314], [354, 322], [362, 338], [354, 354], [338, 362], [322, 354], [314, 338], [322, 322]], "max_radius": 24},
+        {"name": "right_elbow", "parent_part": "screen_right_upper_arm", "child_part": "screen_right_lower_arm_hand", "parent_anchor": [384, 466], "child_anchor": [384, 466], "repair_polygon": [[384, 442], [400, 450], [408, 466], [400, 482], [384, 490], [368, 482], [360, 466], [368, 450]], "max_radius": 24}
+      ]
+    },
+    "screen_left_leg": {
+      "root_part": "core",
+      "joints": [
+        {"name": "left_hip", "parent_part": "core", "child_part": "screen_left_upper_leg", "parent_anchor": [200, 518], "child_anchor": [200, 518], "repair_polygon": [[200, 494], [216, 502], [224, 518], [216, 534], [200, 542], [184, 534], [176, 518], [184, 502]], "max_radius": 24},
+        {"name": "left_knee", "parent_part": "screen_left_upper_leg", "child_part": "screen_left_lower_leg_foot", "parent_anchor": [178, 666], "child_anchor": [178, 666], "repair_polygon": [[178, 642], [194, 650], [202, 666], [194, 682], [178, 690], [162, 682], [154, 666], [162, 650]], "max_radius": 24}
+      ]
+    },
+    "screen_right_leg": {
+      "root_part": "core",
+      "joints": [
+        {"name": "right_hip", "parent_part": "core", "child_part": "screen_right_upper_leg", "parent_anchor": [308, 518], "child_anchor": [308, 518], "repair_polygon": [[308, 494], [324, 502], [332, 518], [324, 534], [308, 542], [292, 534], [284, 518], [292, 502]], "max_radius": 24},
+        {"name": "right_knee", "parent_part": "screen_right_upper_leg", "child_part": "screen_right_lower_leg_foot", "parent_anchor": [330, 666], "child_anchor": [330, 666], "repair_polygon": [[330, 642], [346, 650], [354, 666], [346, 682], [330, 690], [314, 682], [306, 666], [314, 650]], "max_radius": 24}
+      ]
+    }
+  },
+  "parts": {
+    "loincloth_front": {"polygon": [[178, 420], [356, 420], [370, 704], [146, 704]], "pivot": [254, 450], "kind": "flexible"},
+    "screen_left_upper_arm": {"polygon": [[68, 248], [190, 270], [198, 454], [80, 472], [34, 366]], "pivot": [170, 338], "kind": "articulated"},
+    "screen_left_lower_arm_hand": {"polygon": [[24, 398], [176, 394], [170, 606], [32, 612], [8, 520]], "pivot": [124, 466], "kind": "articulated"},
+    "screen_right_upper_arm": {"polygon": [[292, 252], [410, 270], [470, 444], [340, 476]], "pivot": [338, 338], "kind": "articulated"},
+    "screen_right_lower_arm_hand": {"polygon": [[334, 394], [476, 398], [488, 610], [356, 610]], "pivot": [384, 466], "kind": "articulated"},
+    "screen_left_upper_leg": {"polygon": [[126, 474], [260, 474], [252, 684], [116, 684]], "pivot": [200, 518], "kind": "articulated"},
+    "screen_left_lower_leg_foot": {"polygon": [[104, 630], [256, 630], [260, 830], [64, 830]], "pivot": [178, 666], "kind": "articulated"},
+    "screen_right_upper_leg": {"polygon": [[238, 474], [388, 474], [410, 684], [246, 684]], "pivot": [308, 518], "kind": "articulated"},
+    "screen_right_lower_leg_foot": {"polygon": [[244, 630], [416, 630], [464, 830], [236, 830]], "pivot": [330, 666], "kind": "articulated"}
+  },
+  "poses": {
+    "left_contact": {
+      "frame_index": 1,
+      "name": "left_contact",
+      "support_foot": "left",
+      "phase": "contact",
+      "stride": -1.0,
+      "counter_swing": 1.0,
+      "body_y": 0.0,
+      "transforms": {
+        "loincloth_front": {"translation": [0.0, 0.0], "rotation_degrees": 0.0},
+        "screen_left_upper_arm": {"translation": [-2.0, 0.0], "rotation_degrees": -8.0},
+        "screen_left_lower_arm_hand": {"translation": [-5.0, 2.0], "rotation_degrees": -12.0},
+        "screen_right_upper_arm": {"translation": [2.0, 0.0], "rotation_degrees": 8.0},
+        "screen_right_lower_arm_hand": {"translation": [5.0, 2.0], "rotation_degrees": 12.0},
+        "screen_left_upper_leg": {"translation": [-3.0, 0.0], "rotation_degrees": -7.0},
+        "screen_left_lower_leg_foot": {"translation": [-8.0, 0.0], "rotation_degrees": -4.0},
+        "screen_right_upper_leg": {"translation": [3.0, 0.0], "rotation_degrees": 7.0},
+        "screen_right_lower_leg_foot": {"translation": [8.0, -7.0], "rotation_degrees": 4.0}
+      },
+      "layer_order": ["screen_left_upper_leg", "screen_right_upper_leg", "screen_left_lower_leg_foot", "screen_right_lower_leg_foot", "core", "loincloth_front", "screen_left_upper_arm", "screen_right_upper_arm", "screen_left_lower_arm_hand", "screen_right_lower_arm_hand"],
+      "visibility": {"loincloth_front": true, "screen_left_upper_arm": true, "screen_left_lower_arm_hand": true, "screen_right_upper_arm": true, "screen_right_lower_arm_hand": true, "screen_left_upper_leg": true, "screen_left_lower_leg_foot": true, "screen_right_upper_leg": true, "screen_right_lower_leg_foot": true},
+      "flexible_polygons": {"loincloth_front": [[178, 420], [356, 420], [370, 704], [146, 704]], "screen_left_upper_arm": [[68, 248], [190, 270], [198, 454], [80, 472], [34, 366]], "screen_left_lower_arm_hand": [[24, 398], [176, 394], [170, 606], [32, 612], [8, 520]], "screen_right_upper_arm": [[292, 252], [410, 270], [470, 444], [340, 476]], "screen_right_lower_arm_hand": [[334, 394], [476, 398], [488, 610], [356, 610]], "screen_left_upper_leg": [[126, 474], [260, 474], [252, 684], [116, 684]], "screen_left_lower_leg_foot": [[104, 630], [256, 630], [260, 830], [64, 830]], "screen_right_upper_leg": [[238, 474], [388, 474], [410, 684], [246, 684]], "screen_right_lower_leg_foot": [[244, 630], [416, 630], [464, 830], [236, 830]]},
+      "chroma_rgb": [255, 0, 255],
+      "chain_transforms": {
+        "screen_left_arm": {"root_translation": [-2.0, 0.0], "rotation_degrees": {"screen_left_upper_arm": -8.0, "screen_left_lower_arm_hand": -12.0}},
+        "screen_right_arm": {"root_translation": [2.0, 0.0], "rotation_degrees": {"screen_right_upper_arm": 8.0, "screen_right_lower_arm_hand": 12.0}},
+        "screen_left_leg": {"root_translation": [-3.0, 0.0], "rotation_degrees": {"screen_left_upper_leg": -7.0, "screen_left_lower_leg_foot": -4.0}},
+        "screen_right_leg": {"root_translation": [3.0, 0.0], "rotation_degrees": {"screen_right_upper_leg": 7.0, "screen_right_lower_leg_foot": 4.0}}
+      }
+    },
+    "left_down": {"frame_index": 2, "name": "left_down", "support_foot": "left", "phase": "down", "stride": -0.6, "counter_swing": 0.6, "body_y": 1.0},
+    "left_pass": {"frame_index": 3, "name": "left_pass", "support_foot": "left", "phase": "pass", "stride": 0.0, "counter_swing": 0.0, "body_y": 0.0},
+    "left_up": {"frame_index": 4, "name": "left_up", "support_foot": "left", "phase": "up", "stride": 0.6, "counter_swing": -0.6, "body_y": -1.0},
+    "right_contact": {
+      "frame_index": 5,
+      "name": "right_contact",
+      "support_foot": "right",
+      "phase": "contact",
+      "stride": 1.0,
+      "counter_swing": -1.0,
+      "body_y": 0.0,
+      "transforms": {
+        "loincloth_front": {"translation": [0.0, 0.0], "rotation_degrees": 0.0},
+        "screen_left_upper_arm": {"translation": [2.0, 0.0], "rotation_degrees": 8.0},
+        "screen_left_lower_arm_hand": {"translation": [5.0, 2.0], "rotation_degrees": 12.0},
+        "screen_right_upper_arm": {"translation": [-2.0, 0.0], "rotation_degrees": -8.0},
+        "screen_right_lower_arm_hand": {"translation": [-5.0, 2.0], "rotation_degrees": -12.0},
+        "screen_left_upper_leg": {"translation": [3.0, 0.0], "rotation_degrees": 7.0},
+        "screen_left_lower_leg_foot": {"translation": [8.0, -7.0], "rotation_degrees": 4.0},
+        "screen_right_upper_leg": {"translation": [-3.0, 0.0], "rotation_degrees": -7.0},
+        "screen_right_lower_leg_foot": {"translation": [-8.0, 0.0], "rotation_degrees": -4.0}
+      },
+      "layer_order": ["screen_right_upper_leg", "screen_left_upper_leg", "screen_right_lower_leg_foot", "screen_left_lower_leg_foot", "core", "loincloth_front", "screen_right_upper_arm", "screen_left_upper_arm", "screen_right_lower_arm_hand", "screen_left_lower_arm_hand"],
+      "visibility": {"loincloth_front": true, "screen_left_upper_arm": true, "screen_left_lower_arm_hand": true, "screen_right_upper_arm": true, "screen_right_lower_arm_hand": true, "screen_left_upper_leg": true, "screen_left_lower_leg_foot": true, "screen_right_upper_leg": true, "screen_right_lower_leg_foot": true},
+      "flexible_polygons": {"loincloth_front": [[178, 420], [356, 420], [370, 704], [146, 704]], "screen_left_upper_arm": [[68, 248], [190, 270], [198, 454], [80, 472], [34, 366]], "screen_left_lower_arm_hand": [[24, 398], [176, 394], [170, 606], [32, 612], [8, 520]], "screen_right_upper_arm": [[292, 252], [410, 270], [470, 444], [340, 476]], "screen_right_lower_arm_hand": [[334, 394], [476, 398], [488, 610], [356, 610]], "screen_left_upper_leg": [[126, 474], [260, 474], [252, 684], [116, 684]], "screen_left_lower_leg_foot": [[104, 630], [256, 630], [260, 830], [64, 830]], "screen_right_upper_leg": [[238, 474], [388, 474], [410, 684], [246, 684]], "screen_right_lower_leg_foot": [[244, 630], [416, 630], [464, 830], [236, 830]]},
+      "chroma_rgb": [255, 0, 255],
+      "chain_transforms": {
+        "screen_left_arm": {"root_translation": [2.0, 0.0], "rotation_degrees": {"screen_left_upper_arm": 8.0, "screen_left_lower_arm_hand": 12.0}},
+        "screen_right_arm": {"root_translation": [-2.0, 0.0], "rotation_degrees": {"screen_right_upper_arm": -8.0, "screen_right_lower_arm_hand": -12.0}},
+        "screen_left_leg": {"root_translation": [3.0, 0.0], "rotation_degrees": {"screen_left_upper_leg": 7.0, "screen_left_lower_leg_foot": 4.0}},
+        "screen_right_leg": {"root_translation": [-3.0, 0.0], "rotation_degrees": {"screen_right_upper_leg": -7.0, "screen_right_lower_leg_foot": -4.0}}
+      }
+    },
+    "right_down": {"frame_index": 6, "name": "right_down", "support_foot": "right", "phase": "down", "stride": 0.6, "counter_swing": -0.6, "body_y": 1.0},
+    "right_pass": {"frame_index": 7, "name": "right_pass", "support_foot": "right", "phase": "pass", "stride": 0.0, "counter_swing": 0.0, "body_y": 0.0},
+    "right_up": {"frame_index": 8, "name": "right_up", "support_foot": "right", "phase": "up", "stride": -0.6, "counter_swing": 0.6, "body_y": -1.0}
+  },
+  "qa": {
+    "contact_foot_separation_bbox_ratio_min": 0.18,
+    "hand_excursion_bbox_ratio_min": 0.10,
+    "protected_rgba_mismatch_max": 0
+  }
+}

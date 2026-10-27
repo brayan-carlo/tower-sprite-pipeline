@@ -1,0 +1,2 @@
+# Publication validation used this version. Dependencies stay outside the skill.
+Pillow==12.3.0
